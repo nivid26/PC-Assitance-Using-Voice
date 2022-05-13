@@ -1,35 +1,4 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@nivid26 
-karan1199
-/
-Voice-controlled-PC-assistant
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Voice-controlled-PC-assistant/Voice_PC.py /
-@karan1199
-karan1199 Add files via upload
-Latest commit 967a7d5 on Sep 30, 2020
- History
- 1 contributor
-302 lines (223 sloc)  7.09 KB
-   
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 import os.path
@@ -47,7 +16,7 @@ import sys
 import subprocess
 
 
-# In[2]:
+
 
 
 NOTE = ["make a note", "write this down", "remember this", "type this"]
@@ -66,7 +35,6 @@ set_time=datetime.datetime.now()
 NAME = "karan"
 
 
-# In[3]:
 
 
 def speak(text):
@@ -76,7 +44,6 @@ def speak(text):
     engine.runAndWait()
 
 
-# In[4]:
 
 
 def getaudio():
@@ -101,7 +68,6 @@ def getaudio():
     
 
 
-# In[5]:
 
 
 def wakeaudio():
@@ -119,7 +85,7 @@ def wakeaudio():
     return recog.lower()
 
 
-# In[6]:
+
 
 
 def web():
@@ -137,7 +103,7 @@ def web():
     
 
 
-# In[7]:
+
 
 
 def note():
@@ -155,7 +121,6 @@ def note():
         speak("sorry,I coundn't understand please try again")
 
 
-# In[8]:
 
 
 def maps():
@@ -178,7 +143,7 @@ def maps():
         
 
 
-# In[9]:
+
 
 
 def wiki():
@@ -198,7 +163,7 @@ def wiki():
             wiki()        
 
 
-# In[10]:
+
 
 
 def youtube():
@@ -242,7 +207,7 @@ def youtube():
     
 
 
-# In[11]:
+
 
 
 def run():
@@ -295,7 +260,7 @@ def run():
                         break
 
 
-# In[ ]:
+
 
 
 NAME_temp =pyautogui.prompt(text='Enter your name :', title='Voice controlled assistant' , default='Karan')
@@ -317,26 +282,5 @@ while True:
         sys.exit(0)
 
 
-# In[ ]:
 
 
-
-
-
-# In[ ]:
-
-
-
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
